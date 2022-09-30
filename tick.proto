@@ -1,0 +1,12 @@
+syntax = "proto3";
+package tick;
+
+import "google/protobuf/timestamp.proto";
+
+option go_package = "tick/";
+
+message Tick {
+  google.protobuf.Timestamp time = 1;
+  int32 data = 2;
+}
+
